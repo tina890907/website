@@ -1,54 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Red Lantern Design</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Helvetica, verdana;
+            font-size: 100%;
+        }
+
+        header {
+            background-image: url('images/tokyo.jpg');
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #000000;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+
+
+        #one {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        #two {
+            padding: 20px;
+        }
+
+        #two ul {
+            list-style-type: circle;
+            float: right;
+            background-color: white;
+            padding: 20px;
+
+        }
+
+
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #000000;
+            color: white;
+        }
+    </style>
 </head>
 
-<body style="background-color:	#800000;">
-    <header id="masthead">
-        <h1><img alt="Red Lantern logo" src="images/rl_logo.png" /></h1>
-        <ul id="nav">
-            <li>a class="active" title="Red Lantern home" href="index.html">Home</a></li>
-            <li><a title="Decign services" href="services.html">services</a></li>
-            <li><a title="Our work" href="portfolio.html">Portfolio</a></li>
-            <li><a title="contact Red Lantern" href="contact.html">Contact</a></li>
-        </ul>
+<body>
+    <header>
+        <!-- header begins -->
+        <div id="logo">
+            <h1>BLACK &amp; <span style="color:white;">WHITE</span></h1>
+            <h2>Company Slogan Goes Here</h2>
+        </div>
+
+
+        <!-- header ends -->
     </header>
-    <article id="maincContent">
-        <section id="titleBar">
-            <img alt="tokyo buildings" src="images/tokyo.jpg" />
-            <h1>Red Lantern builds unique interfaces<span class="amp">&amp;</span>user experience</h1>
-        </section>
-        <section id="content">
-            <h2>Welcome to the New Red Lantern Design</h2>
-            <p>Red Lantern is a small web design and consulting firm specializing in standards-base.
-                Our goal is to build simple, beautiful webpages that make your information easy to </p>
-            <p>If you or your company is interested in working with us, please check out our portfolio
-                work and contact us with your project details. We look forward to hearing from you
-                on the web a little simpler and easier to find.</p>
-            <ul id="link-list">
-                <li><a title="View our portflio" href="#">View our full portfolio</a></li>
-                <li><a title="Contact Red Lantern" href="#">Contact Red Lantern</a></li>
+
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="#" title=""> Home </a></li>
+                <li><a href="#" title=""> Blog </a></li>
+                <li><a href="#" title=""> Gallery </a></li>
+                <li><a href="#" title=""> About </a></li>
+                <li><a href="#" title=""> Contact</a></li>
             </ul>
-        </section>
-        <section id="sidebar">
-            <h2>Our Work</h2>
-            <ul id="port">
-                <li><img alt="comp0" src="images/markinjapan.jpg" /></li>
-                <li><img alt="comp1" src="images/a2g.jpg" /></li>
-                <li><img alt="comp2" src="images/foobar.jpg" /></li>
-                <li><img alt="comp3" src="images/rpm.jpg" /></li>
-            </ul>
-        </section>
-    </article>
-    <footer id="footer">
-        <p>Copyright &copy; Red Lantern Design, all rights reserved.</p>
+
+        </div>
+    </nav>
+    <section>
+        <aside id="one">
+            <h1 style="background-color:black;color:white;padding:10px;">Customer Login</h1>
+            <form>
+                <label for="fname">Login Name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Password:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="submit" value="Login">
+            </form>
+            <p><ins>Forgot your password?</ins></p>
+
+            <h1 style="background-color:black;color:white;padding:10px;">Company News</h1>
+            <article>
+                <p>June 23, 2011<br>
+                    <ins>Tempus in. lacus. Duis<br>
+                        tempor posuere diam.<br>
+                        Suspendisse vel tellus guis<br>
+                        nunc malesuada porta...</ins>
+                </p>
+            </article>
+
+            <article>
+                <p>March 4, 2011<br>
+                    <ins>Nulla id magna sed dolor<br>
+                        sollicitudin laoreet. tempus in.<br>
+                        lacus. Duis tempor posuere<br>
+                        diam...</ins>
+                </p>
+            </article>
+
+            <article>
+                <p>
+                    February 18,2011<br><ins>Lorem ipsum dolor sit amet<br>
+                        consectetuer adipiscing elit.</ins>
+                </p>
+            </article>
+
+            <article>
+                <p>February 12, 2011<br><ins>Sed dolor sollicitudin laoreet.<br>
+                        tempus in. lacus. Duis tempor<br>
+                        posuere diam. Suspendisse</ins></p>
+            </article>
+
+            <article>
+                <p>February 1, 2011<br><ins>Ipsum dolor sit amet.<br>
+                        consectetuer adipiscing elit.<br>
+                        In nec</ins></p>
+            </article>
+        </aside>
+
+        <aside id="two">
+            <article>
+                <h2>Welcome to Our Website!</h2>
+                <h3>METAMORPHOSIS DESIGN</h3>
+                <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat...</p>
+                <ul>
+                    <li>Comments(2)</li>
+                    <li>21.02.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>FREE WEB SITE TEMPLATES</h3>
+                <p>Sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat.</p>
+                <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat...</p>
+                <ul>
+                    <li>Comments(8) </li>
+                    <li> 13.46.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>FLASH TEMPLATES</h3>
+                <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat...</p>
+                <ul>
+                    <li>Comments(2) </li>
+                    <li> 21.02.</li>
+                </ul>
+            </article>
+        </aside>
+    </section>
+    <footer>
+        <p>Copyright ; 2011. Flash Templates<br>
+            Privacy Policy | Terms of Use | XHTML I CSS</p>
     </footer>
+
+
 </body>
 
 </html>
